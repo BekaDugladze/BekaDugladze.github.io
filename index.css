@@ -127,6 +127,9 @@ body{
     border-radius: 75%;
     margin: 4%;
 }
+#nikolozi{
+    cursor: auto;
+}
 .Bio{
     display: flex;
     flex-direction: row;
@@ -150,4 +153,52 @@ body{
 .Bio img{
     margin-top: 40px;
     cursor: pointer;
+}
+@media screen and (min-width:250px ) and (max-width: 800px){
+    body{
+        min-width: 450px;
+        max-width: 800px;
+    }
+    #loadPage{
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info img{
+        width: 200px;
+        height: 200px;
+    }
+    .info h1 {
+        font-size: 20px;
+    }
+    .painting img{
+        opacity: 0;
+        top: 0;
+        position: absolute;
+        height: 50%;
+        width: 100%;
+    }
+    .textCover{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 90%;
+        letter-spacing: 6.4px;
+    }
+    .scroll{
+        top: 50%;
+    }
+    .Bio{
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    #Niko main h1{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    #nikolozi{
+        display: block;
+        align-self: center;
+    }
 }
